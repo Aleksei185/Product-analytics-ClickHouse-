@@ -70,7 +70,7 @@ clickhouse-analytics/
 
 ## Скриншот
 
-![analytics dashboard](\screenshots\product%20analytics%20dashboard.png)
+![analytics dashboard](screenshots/product%20analytics%20dashboard.png)
 
 ## Автор
 
