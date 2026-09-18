@@ -1,0 +1,32 @@
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.3
+    container_name: clickhouse-analytics
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse
+    environment:
+      CLICKHOUSE_DB: analytics
+      CLICKHOUSE_SKIP_USER_SETUP: 1
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase-analytics
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./metabase-data:/metabase-data
+    environment:
+      MB_DB_FILE: /metabase-data/metabase.db
+      JAVA_OPTS: "-Xmx2g"
+    depends_on:
+      - clickhouse
+
+volumes:
+  clickhouse-data:

@@ -1,0 +1,20 @@
+# Данные ClickHouse
+clickhouse-data/
+
+# Данные Metabase
+metabase-data/
+
+# Плагины Metabase
+metabase-plugins/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Логи
+*.log
+
+# Системные
+.DS_Store
+Thumbs.db
