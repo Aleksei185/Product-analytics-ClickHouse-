@@ -45,7 +45,7 @@ clickhouse-analytics/
 
 1. Клонировать репозиторий
 
-   git clone https://github.com/ваш_логин/clickhouse-analytics.git
+   git clone https://github.com/Aleksei185/clickhouse-analytics.git
    cd clickhouse-analytics
 
 2. Запустить контейнеры 
