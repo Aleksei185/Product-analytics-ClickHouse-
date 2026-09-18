@@ -45,7 +45,7 @@ clickhouse-analytics/
 
 1. Клонировать репозиторий
 
-   git clone https://github.com/Aleksei185/clickhouse-analytics.git
+   git clone https://github.com/Aleksei185/Product-analytics-ClickHouse.git
    cd clickhouse-analytics
 
 2. Запустить контейнеры 
@@ -70,7 +70,7 @@ clickhouse-analytics/
 
 ## Скриншот
 
-![analytics dashboard](product%20analytics%20dashboard.png)
+![analytics dashboard](\screenshots\product%20analytics%20dashboard.png)
 
 ## Автор
 
