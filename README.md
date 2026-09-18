@@ -24,7 +24,7 @@ clickhouse-analytics/
 ├── generator/
 │ └── generate_events.py
 ├── sql/
-│ └── analytics_queries.sql # SQL-запросы
+│ └── analytics_queries.sql
 ├── screenshots/
 ├── .gitignore
 ├── README.md
